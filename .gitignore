@@ -1,0 +1,29 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+.gradle-user
+.gradle-user-home
+
+# other
+eclipse
+run
+runs
+run-data
+repomix-output-AppliedEnergistics-Applied-Energistics-2.md
+
+repo

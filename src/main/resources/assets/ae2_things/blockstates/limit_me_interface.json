@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": {
+      "model": "ae2_things:block/limit_me_interface"
+    }
+  }
+}
+
