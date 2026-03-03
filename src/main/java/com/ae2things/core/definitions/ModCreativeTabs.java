@@ -1,6 +1,6 @@
-package com.example.examplemod.core.definitions;
+package com.ae2things.core.definitions;
 
-import com.example.examplemod.ExampleMod;
+import com.ae2things.Ae2ThingsMod;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -11,7 +11,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public final class ModCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> DR = DeferredRegister.create(Registries.CREATIVE_MODE_TAB,
-            ExampleMod.MODID);
+            Ae2ThingsMod.MODID);
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MAIN = DR.register(
             "main",

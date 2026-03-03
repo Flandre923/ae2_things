@@ -1,11 +1,11 @@
-package com.example.examplemod;
+package com.ae2things;
 
 import org.slf4j.Logger;
 
-import com.example.examplemod.core.definitions.ModBlockEntities;
-import com.example.examplemod.core.definitions.ModBlocks;
-import com.example.examplemod.core.definitions.ModCreativeTabs;
-import com.example.examplemod.core.definitions.ModMenuTypes;
+import com.ae2things.core.definitions.ModBlockEntities;
+import com.ae2things.core.definitions.ModBlocks;
+import com.ae2things.core.definitions.ModCreativeTabs;
+import com.ae2things.core.definitions.ModMenuTypes;
 import com.mojang.logging.LogUtils;
 
 import appeng.api.AECapabilities;
@@ -18,13 +18,13 @@ import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-@Mod(ExampleMod.MODID)
-public class ExampleMod {
+@Mod(Ae2ThingsMod.MODID)
+public class Ae2ThingsMod {
     public static final String MODID = "ae2_things";
     public static final Logger LOGGER = LogUtils.getLogger();
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
 
-    public ExampleMod(IEventBus modEventBus, ModContainer modContainer) {
+    public Ae2ThingsMod(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::registerCapabilities);
 

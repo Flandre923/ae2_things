@@ -1,10 +1,10 @@
-package com.example.examplemod.block;
+package com.ae2things.block;
 
 import com.mojang.serialization.MapCodec;
 import org.jetbrains.annotations.Nullable;
 
-import com.example.examplemod.blockentity.LimitMeInterfaceBlockEntity;
-import com.example.examplemod.core.definitions.ModBlockEntities;
+import com.ae2things.blockentity.LimitMeInterfaceBlockEntity;
+import com.ae2things.core.definitions.ModBlockEntities;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionResult;

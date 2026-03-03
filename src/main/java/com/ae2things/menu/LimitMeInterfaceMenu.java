@@ -1,4 +1,4 @@
-package com.example.examplemod.menu;
+package com.ae2things.menu;
 
 import appeng.api.inventories.InternalInventory;
 import appeng.api.inventories.PlatformInventoryWrapper;
@@ -8,9 +8,9 @@ import appeng.menu.SlotSemantics;
 import appeng.menu.slot.AppEngSlot;
 import appeng.menu.slot.FakeSlot;
 
-import com.example.examplemod.blockentity.LimitMeInterfaceBlockEntity;
-import com.example.examplemod.core.definitions.ModBlocks;
-import com.example.examplemod.core.definitions.ModMenuTypes;
+import com.ae2things.blockentity.LimitMeInterfaceBlockEntity;
+import com.ae2things.core.definitions.ModBlocks;
+import com.ae2things.core.definitions.ModMenuTypes;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;

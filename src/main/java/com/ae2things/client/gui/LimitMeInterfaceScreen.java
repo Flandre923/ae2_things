@@ -1,10 +1,10 @@
-package com.example.examplemod.client.gui;
+package com.ae2things.client.gui;
 
 import appeng.client.gui.AEBaseScreen;
 import appeng.client.gui.style.ScreenStyle;
 import appeng.client.gui.style.StyleManager;
 
-import com.example.examplemod.menu.LimitMeInterfaceMenu;
+import com.ae2things.menu.LimitMeInterfaceMenu;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;

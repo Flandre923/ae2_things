@@ -1,12 +1,12 @@
-package com.example.examplemod.core.definitions;
+package com.ae2things.core.definitions;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.function.Supplier;
 
-import com.example.examplemod.ExampleMod;
-import com.example.examplemod.block.LimitMeInterfaceBlock;
+import com.ae2things.Ae2ThingsMod;
+import com.ae2things.block.LimitMeInterfaceBlock;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
@@ -17,7 +17,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public final class ModBlocks {
-    public static final DeferredRegister.Blocks DR = DeferredRegister.createBlocks(ExampleMod.MODID);
+    public static final DeferredRegister.Blocks DR = DeferredRegister.createBlocks(Ae2ThingsMod.MODID);
 
     private static final List<RegisteredBlock<?>> BLOCKS = new ArrayList<>();
 
@@ -38,7 +38,7 @@ public final class ModBlocks {
 
     private static <T extends Block> RegisteredBlock<T> block(String englishName, String id, Supplier<T> blockSupplier) {
         var deferredBlock = DR.register(id, blockSupplier);
-        var deferredItem = ExampleMod.ITEMS.registerSimpleBlockItem(id, deferredBlock);
+        var deferredItem = Ae2ThingsMod.ITEMS.registerSimpleBlockItem(id, deferredBlock);
         var definition = new RegisteredBlock<>(englishName, deferredBlock, deferredItem);
         BLOCKS.add(definition);
         return definition;

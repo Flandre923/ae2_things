@@ -1,10 +1,10 @@
-package com.example.examplemod.blockentity;
+package com.ae2things.blockentity;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.example.examplemod.core.definitions.ModBlockEntities;
-import com.example.examplemod.core.definitions.ModBlocks;
-import com.example.examplemod.menu.LimitMeInterfaceMenu;
+import com.ae2things.core.definitions.ModBlockEntities;
+import com.ae2things.core.definitions.ModBlocks;
+import com.ae2things.menu.LimitMeInterfaceMenu;
 
 import appeng.api.config.Actionable;
 import appeng.api.inventories.InternalInventory;
