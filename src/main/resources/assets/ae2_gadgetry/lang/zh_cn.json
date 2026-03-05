@@ -1,0 +1,20 @@
+{
+  "itemGroup.ae2_gadgetry.main": "AE2: Gadgetry",
+  "block.ae2_gadgetry.limit_me_interface": "ME 限制接口",
+  "gui.ae2_gadgetry.back": "返回",
+  "gui.ae2_gadgetry.unlimited": "无限制",
+  "gui.ae2_gadgetry.limit_page": "限制设置",
+  "gui.ae2_gadgetry.current_limit": "当前限制",
+  "gui.ae2_gadgetry.marked_item": "标记物品",
+  "gui.ae2_gadgetry.network_amount": "网络内数量",
+  "gui.ae2_gadgetry.limit": "限制值",
+  "gui.ae2_gadgetry.hint_lower_slot": "使用下方槽位：存入/取出",
+
+  "ae2_gadgetry.configuration.title": "AE2: Gadgetry 配置",
+  "ae2_gadgetry.configuration.section.ae2_gadgetry.common.toml": "AE2: Gadgetry 配置",
+  "ae2_gadgetry.configuration.section.ae2_gadgetry.common.toml.title": "AE2: Gadgetry 配置",
+  "ae2_gadgetry.configuration.items": "物品列表",
+  "ae2_gadgetry.configuration.logDirtBlock": "记录泥脏方块日志",
+  "ae2_gadgetry.configuration.magicNumberIntroduction": "魔法数字文本",
+  "ae2_gadgetry.configuration.magicNumber": "魔法数字"
+}

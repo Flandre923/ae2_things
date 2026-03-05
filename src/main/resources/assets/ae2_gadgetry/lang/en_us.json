@@ -1,0 +1,22 @@
+{
+  "itemGroup.ae2_gadgetry.main": "AE2: Gadgetry",
+  "block.ae2_gadgetry.limit_me_interface": "Limit Me Interface",
+  "gui.ae2_gadgetry.back": "Back",
+  "gui.ae2_gadgetry.unlimited": "Unlimited",
+  "gui.ae2_gadgetry.limit_page": "Limit Settings",
+  "gui.ae2_gadgetry.current_limit": "Current Limit",
+  "gui.ae2_gadgetry.marked_item": "Marked Item",
+  "gui.ae2_gadgetry.network_amount": "In Network",
+  "gui.ae2_gadgetry.limit": "Limit",
+  "gui.ae2_gadgetry.hint_lower_slot": "Use lower slot: insert/extract",
+
+  "ae2_gadgetry.configuration.title": "Example Mod Configs",
+  "ae2_gadgetry.configuration.section.ae2_gadgetry.common.toml": "Example Mod Configs",
+  "ae2_gadgetry.configuration.section.ae2_gadgetry.common.toml.title": "Example Mod Configs",
+  "ae2_gadgetry.configuration.items": "Item List",
+  "ae2_gadgetry.configuration.logDirtBlock": "Log Dirt Block",
+  "ae2_gadgetry.configuration.magicNumberIntroduction": "Magic Number Text",
+  "ae2_gadgetry.configuration.magicNumber": "Magic Number"
+}
+
+

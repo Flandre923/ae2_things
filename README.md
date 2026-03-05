@@ -1,4 +1,4 @@
-# AE2 Things
+# AE2: Gadgetry
 
 An extension mod for [Applied Energistics 2](https://github.com/AppliedEnergistics/Applied-Energistics-2) on NeoForge 1.21.1.
 
@@ -30,3 +30,4 @@ This project is licensed under the [MIT License](LICENSE).
 ### Additional Resources
 - **Applied Energistics 2 API:** Included for development.
 - **NeoForged Documentation:** [https://docs.neoforged.net/](https://docs.neoforged.net/)
+
