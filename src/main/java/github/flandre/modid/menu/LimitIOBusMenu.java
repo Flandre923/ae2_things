@@ -6,6 +6,7 @@ import appeng.menu.implementations.IOBusMenu;
 import appeng.menu.implementations.MenuTypeBuilder;
 import appeng.parts.automation.IOBusPart;
 import github.flandre.modid.Ae2GadgetryMod;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Inventory;
@@ -16,10 +17,12 @@ public class LimitIOBusMenu extends IOBusMenu {
 
     public static final MenuType<LimitIOBusMenu> EXPORT_TYPE = MenuTypeBuilder
             .create(LimitIOBusMenu::new, github.flandre.modid.part.LimitExportBusPart.class)
+            .withMenuTitle(host -> Component.translatable("item.ae2_gadgetry.limit_export_bus"))
             .buildUnregistered(ResourceLocation.parse(Ae2GadgetryMod.MODID + ":limit_export_bus"));
 
     public static final MenuType<LimitIOBusMenu> IMPORT_TYPE = MenuTypeBuilder
             .create(LimitIOBusMenu::new, github.flandre.modid.part.LimitImportBusPart.class)
+            .withMenuTitle(host -> Component.translatable("item.ae2_gadgetry.limit_import_bus"))
             .buildUnregistered(ResourceLocation.parse(Ae2GadgetryMod.MODID + ":limit_import_bus"));
 
     public LimitIOBusMenu(MenuType<?> menuType, int id, Inventory ip, IOBusPart host) {

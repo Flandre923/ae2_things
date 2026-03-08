@@ -38,9 +38,9 @@ public class Ae2GadgetryModClient {
         InitScreens.register(event, ModMenuTypes.LIMIT_ME_INTERFACE.get(), LimitMeInterfaceScreen::new,
                 "/screens/ae2_gadgetry/limit_interface.json");
         InitScreens.register(event, ModMenuTypes.LIMIT_IMPORT_BUS.get(), LimitIOBusScreen::new,
-                "/screens/import_bus.json");
+                "/screens/ae2_gadgetry/import_bus.json");
         InitScreens.register(event, ModMenuTypes.LIMIT_EXPORT_BUS.get(), LimitIOBusScreen::new,
-                "/screens/export_bus.json");
+                "/screens/ae2_gadgetry/export_bus.json");
         InitScreens.register(event, ModMenuTypes.LIMIT_IO_BUS_SET_AMOUNT.get(), LimitIOBusSetAmountScreen::new,
                 "/screens/set_stock_amount.json");
     }
