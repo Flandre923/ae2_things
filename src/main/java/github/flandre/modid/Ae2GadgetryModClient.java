@@ -1,6 +1,8 @@
 package github.flandre.modid;
 
 import github.flandre.modid.client.gui.LimitMeInterfaceScreen;
+import github.flandre.modid.client.gui.LimitIOBusScreen;
+import github.flandre.modid.client.gui.LimitIOBusSetAmountScreen;
 import github.flandre.modid.core.definitions.ModMenuTypes;
 
 import appeng.init.client.InitScreens;
@@ -35,6 +37,12 @@ public class Ae2GadgetryModClient {
     static void registerScreens(RegisterMenuScreensEvent event) {
         InitScreens.register(event, ModMenuTypes.LIMIT_ME_INTERFACE.get(), LimitMeInterfaceScreen::new,
                 "/screens/ae2_gadgetry/limit_interface.json");
+        InitScreens.register(event, ModMenuTypes.LIMIT_IMPORT_BUS.get(), LimitIOBusScreen::new,
+                "/screens/import_bus.json");
+        InitScreens.register(event, ModMenuTypes.LIMIT_EXPORT_BUS.get(), LimitIOBusScreen::new,
+                "/screens/export_bus.json");
+        InitScreens.register(event, ModMenuTypes.LIMIT_IO_BUS_SET_AMOUNT.get(), LimitIOBusSetAmountScreen::new,
+                "/screens/set_stock_amount.json");
     }
 }
 
