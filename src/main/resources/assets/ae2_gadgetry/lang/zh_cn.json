@@ -1,6 +1,10 @@
 {
   "itemGroup.ae2_gadgetry.main": "AE2: Gadgetry",
   "block.ae2_gadgetry.limit_me_interface": "ME 限制接口",
+  "item.ae2_gadgetry.limit_me_interface": "ME 限制接口",
+  "item.ae2_gadgetry.limit_me_interface_part": "ME 限制接口部件",
+  "item.ae2_gadgetry.limit_import_bus": "限制输入总线",
+  "item.ae2_gadgetry.limit_export_bus": "限制输出总线",
   "gui.ae2_gadgetry.back": "返回",
   "gui.ae2_gadgetry.unlimited": "无限制",
   "gui.ae2_gadgetry.limit_page": "限制设置",

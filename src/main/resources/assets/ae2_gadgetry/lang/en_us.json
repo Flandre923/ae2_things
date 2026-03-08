@@ -1,6 +1,10 @@
 {
   "itemGroup.ae2_gadgetry.main": "AE2: Gadgetry",
   "block.ae2_gadgetry.limit_me_interface": "Limit Me Interface",
+  "item.ae2_gadgetry.limit_me_interface": "Limit Me Interface",
+  "item.ae2_gadgetry.limit_me_interface_part": "Limit Me Interface Part",
+  "item.ae2_gadgetry.limit_import_bus": "Limit Import Bus",
+  "item.ae2_gadgetry.limit_export_bus": "Limit Export Bus",
   "gui.ae2_gadgetry.back": "Back",
   "gui.ae2_gadgetry.unlimited": "Unlimited",
   "gui.ae2_gadgetry.limit_page": "Limit Settings",

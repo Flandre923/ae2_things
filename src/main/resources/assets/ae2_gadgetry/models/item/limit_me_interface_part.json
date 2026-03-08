@@ -1,0 +1,33 @@
+{
+  "parent": "ae2:item/part_base",
+  "textures": {
+    "front": "ae2_gadgetry:block/limit_me_interface",
+    "sides": "ae2_gadgetry:block/limit_me_interface"
+  },
+  "elements": [
+    {
+      "from": [2, 2, 7],
+      "to": [14, 14, 9],
+      "faces": {
+        "north": { "uv": [2, 2, 14, 14], "texture": "#front" },
+        "east": { "uv": [7, 2, 9, 14], "texture": "#sides" },
+        "south": { "uv": [2, 2, 14, 14], "texture": "#sides" },
+        "west": { "uv": [7, 2, 9, 14], "texture": "#sides" },
+        "up": { "uv": [2, 7, 14, 9], "texture": "#sides" },
+        "down": { "uv": [2, 7, 14, 9], "texture": "#sides" }
+      }
+    },
+    {
+      "from": [4, 4, 9],
+      "to": [12, 12, 11],
+      "faces": {
+        "north": { "uv": [4, 4, 12, 12], "texture": "#front" },
+        "east": { "uv": [9, 4, 11, 12], "texture": "#sides" },
+        "south": { "uv": [4, 4, 12, 12], "texture": "#sides" },
+        "west": { "uv": [9, 4, 11, 12], "texture": "#sides" },
+        "up": { "uv": [4, 9, 12, 11], "texture": "#sides" },
+        "down": { "uv": [4, 9, 12, 11], "texture": "#sides" }
+      }
+    }
+  ]
+}

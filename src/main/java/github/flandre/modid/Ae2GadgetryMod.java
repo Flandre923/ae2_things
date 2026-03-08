@@ -5,10 +5,12 @@ import org.slf4j.Logger;
 import github.flandre.modid.core.definitions.ModBlockEntities;
 import github.flandre.modid.core.definitions.ModBlocks;
 import github.flandre.modid.core.definitions.ModCreativeTabs;
+import github.flandre.modid.core.definitions.ModItems;
 import github.flandre.modid.core.definitions.ModMenuTypes;
 import com.mojang.logging.LogUtils;
 
 import appeng.api.AECapabilities;
+import appeng.core.definitions.AEBlockEntities;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
@@ -32,16 +34,22 @@ public class Ae2GadgetryMod {
         ModCreativeTabs.DR.register(modEventBus);
         ModBlockEntities.DR.register(modEventBus);
         ModMenuTypes.DR.register(modEventBus);
+        ModItems.init();
         ITEMS.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-        // Common setup hook.
     }
 
     private void registerCapabilities(RegisterCapabilitiesEvent event) {
+        event.registerBlockEntity(
+                Capabilities.ItemHandler.BLOCK,
+                AEBlockEntities.CABLE_BUS.get(),
+                (object, context) -> object.getPart(context) instanceof github.flandre.modid.part.LimitMeInterfacePart part
+                        ? part.getExternalItemHandler()
+                        : null);
         event.registerBlockEntity(
                 AECapabilities.IN_WORLD_GRID_NODE_HOST,
                 ModBlockEntities.LIMIT_ME_INTERFACE.get(),

@@ -13,6 +13,10 @@
       "top": 53,
       "grid": "HORIZONTAL"
     },
+    "UPGRADE": {
+      "left": 8,
+      "top": 35
+    },
     "STORAGE": {
       "left": 8,
       "top": 71,

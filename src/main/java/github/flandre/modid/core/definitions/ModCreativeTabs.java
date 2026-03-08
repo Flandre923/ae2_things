@@ -18,7 +18,12 @@ public final class ModCreativeTabs {
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.ae2_gadgetry.main"))
                     .icon(() -> new ItemStack(ModBlocks.LIMIT_ME_INTERFACE.item().get()))
-                    .displayItems((params, output) -> output.accept(ModBlocks.LIMIT_ME_INTERFACE.item().get()))
+                    .displayItems((params, output) -> {
+                        output.accept(ModBlocks.LIMIT_ME_INTERFACE.item().get());
+                        output.accept(ModItems.LIMIT_ME_INTERFACE_PART.get());
+                        output.accept(ModItems.LIMIT_IMPORT_BUS.get());
+                        output.accept(ModItems.LIMIT_EXPORT_BUS.get());
+                    })
                     .build());
 
     private ModCreativeTabs() {
