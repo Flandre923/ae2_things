@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "ae2_gadgetry:block/limit_me_interface"
+    },
+    "facing=east": {
+      "model": "ae2_gadgetry:block/limit_me_interface",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ae2_gadgetry:block/limit_me_interface",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ae2_gadgetry:block/limit_me_interface",
+      "y": 270
     }
   }
 }

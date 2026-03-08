@@ -27,6 +27,7 @@ public final class ModBlocks {
             () -> new LimitMeInterfaceBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.METAL)
                     .strength(4.0F, 6.0F)
+                    .noOcclusion()
                     .requiresCorrectToolForDrops()));
 
     private ModBlocks() {
