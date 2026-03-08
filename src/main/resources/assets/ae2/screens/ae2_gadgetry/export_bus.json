@@ -1,0 +1,30 @@
+{
+  "$schema": "../schema.json",
+  "includes": [
+    "../common/common.json",
+    "../common/player_inventory.json",
+    "../common/toolbox.json"
+  ],
+  "background": {
+    "texture": "ae2_gadgetry:textures/gui/storagebus.png",
+    "srcRect": [0, 0, 176, 253]
+  },
+  "slots": {
+    "CONFIG": {
+      "left": 8,
+      "top": 29,
+      "grid": "BREAK_AFTER_9COLS"
+    }
+  },
+  "text": {
+    "dialog_title": {
+      "text": {
+        "translate": "item.ae2_gadgetry.limit_export_bus"
+      },
+      "position": {
+        "left": 8,
+        "top": 6
+      }
+    }
+  }
+}
