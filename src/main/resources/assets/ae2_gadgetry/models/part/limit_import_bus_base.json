@@ -1,11 +1,11 @@
 {
   "credit": "Made with Blockbench by Sea_Kerman",
   "textures": {
-    "sides": "ae2:part/import_bus_sides",
+    "sides": "ae2_gadgetry:part/import_bus_sides",
     "sidesStatus": "ae2:part/monitor_sides_status",
     "particle": "ae2:part/monitor_back",
     "back": "ae2:part/monitor_back",
-    "front": "ae2:part/import_bus"
+    "front": "ae2_gadgetry:part/import_bus"
   },
   "elements": [
     {

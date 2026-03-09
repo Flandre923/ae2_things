@@ -2,8 +2,8 @@
   "credit": "Made with Blockbench by Sea_Kerman",
   "parent": "ae2:item/part_base",
   "textures": {
-    "sides": "ae2:part/export_bus_sides",
-    "front": "ae2:part/export_bus"
+    "sides": "ae2_gadgetry:part/export_bus_sides",
+    "front": "ae2_gadgetry:part/export_bus"
   },
   "elements": [
     {
