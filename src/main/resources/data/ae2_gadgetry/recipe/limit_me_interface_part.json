@@ -4,9 +4,6 @@
   "ingredients": [
     {
       "item": "ae2_gadgetry:limit_me_interface"
-    },
-    {
-      "item": "ae2:cable_anchor"
     }
   ],
   "result": {

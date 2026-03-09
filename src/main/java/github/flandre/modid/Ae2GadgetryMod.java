@@ -34,13 +34,14 @@ public class Ae2GadgetryMod {
         ModCreativeTabs.DR.register(modEventBus);
         ModBlockEntities.DR.register(modEventBus);
         ModMenuTypes.DR.register(modEventBus);
-        ModItems.init();
+        ModItems.bootstrap();
         ITEMS.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(ModItems::init);
     }
 
     private void registerCapabilities(RegisterCapabilitiesEvent event) {

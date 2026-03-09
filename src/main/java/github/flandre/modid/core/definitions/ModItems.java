@@ -8,6 +8,8 @@ import github.flandre.modid.part.LimitMeInterfacePart;
 import appeng.api.parts.IPart;
 import appeng.api.parts.IPartItem;
 import appeng.api.parts.PartModels;
+import appeng.api.upgrades.Upgrades;
+import appeng.core.definitions.AEItems;
 import appeng.items.parts.PartItem;
 import appeng.items.parts.PartModelsHelper;
 import net.minecraft.world.item.Item;
@@ -34,8 +36,23 @@ public final class ModItems {
     private ModItems() {
     }
 
+    public static void bootstrap() {
+        // Force class initialization during mod construction so DeferredRegister entries
+        // are created before NeoForge fires the item RegisterEvent.
+    }
+
     public static void init() {
-        // Trigger class initialization for static item registrations.
+        registerBusUpgrades(LIMIT_IMPORT_BUS.get());
+        registerBusUpgrades(LIMIT_EXPORT_BUS.get());
+    }
+
+    private static void registerBusUpgrades(Item busItem) {
+        Upgrades.add(AEItems.REDSTONE_CARD, busItem, 1);
+        Upgrades.add(AEItems.CAPACITY_CARD, busItem, 5);
+        Upgrades.add(AEItems.FUZZY_CARD, busItem, 1);
+        Upgrades.add(AEItems.SPEED_CARD, busItem, 4);
+        Upgrades.add(AEItems.CRAFTING_CARD, busItem, 1);
+        Upgrades.add(AEItems.INVERTER_CARD, busItem, 1);
     }
 
     private static <T extends IPart> DeferredHolder<Item, PartItem<T>> registerPart(
